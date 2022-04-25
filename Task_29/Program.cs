@@ -3,38 +3,22 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-//Console.WriteLine("Введите число соответствующее 6 чисел массива");
-//int Array = Convert.ToInt32(Console.ReadLine()); // задаём строку для введения количества
-// чисел в массиве
 
-int [] array = new int[6]; // выделяем память на 6 элементов значения array
+int [] array_1 = new int [5]; //Задаём массивы и определяем количество символов в массиве
+int [] array_2 = new int [3];
 
-Console.WriteLine("Введите число первого элемента массива слева на право");
-int array0 = Convert.ToInt32(Console.ReadLine()); // задаём строку для введения первого
-// элемента массива
-Console.WriteLine("Введите число второго элемента массива слева на право");
-int array1 = Convert.ToInt32(Console.ReadLine()); // задаём строку для введения второго
-// элемента массива
-Console.WriteLine("Введите число третьего элемента массива слева на право");
-int array2 = Convert.ToInt32(Console.ReadLine()); // задаём строку для введения третьего
-// элемента массива
-Console.WriteLine("Введите число четвертого элемента массива слева на право");
-int array3 = Convert.ToInt32(Console.ReadLine()); // задаём строку для введения четвертого
-// элемента массива
-Console.WriteLine("Введите число пятого элемента массива слева на право");
-int array4 = Convert.ToInt32(Console.ReadLine()); // задаём строку для введения пятого
-// элемента массива
-Console.WriteLine("Введите число шестого элемента массива слева на право");
-int array5 = Convert.ToInt32(Console.ReadLine()); // задаём строку для введения шестого
-// элемента массива
+for (int i = 0; i < array_1.Length; i++)
+{
+    array_1 [i] = new Random().Next(1, 20); // Создаём рандомные числа в массиве от 1 до 19
+    System.Console.Write($" {array_1[i]}, "); // выводим на печать через запятую все числа массива
+}
 
+System.Console.WriteLine(); // Разрыв строки
 
-array[0] = array0; 
-array[1] = array1;
-array[2] = array2;
-array[3] = array3;
-array[4] = array4;
-array[5] = array5;
+for (int i = 0; i < array_2.Length; i++)
+{
+    array_2 [i] = new Random().Next(1, 34); // Создаём рандомные числа в массиве от 1 до 34
+    System.Console.Write($" {array_2[i]}, "); // выводим на печать через запятую все числа массива
+}
 
-//Console.WriteLine(array0, array1, array2, array3, array4, array5 ]);
-Console.WriteLine($"[ {array[0]}, {array[1]}, {array[2]}, {array[3]}, {array[4]}, {array[5]} ]");
+System.Console.WriteLine(); // Разрыв строки
